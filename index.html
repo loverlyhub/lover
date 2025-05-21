@@ -287,7 +287,7 @@
       document.getElementById("siteLink").value = url;
 
       const inviteText = "Come see how compatible your love is.";
-      const whatsappMessage = `${message}\n\n${inviteText}\n${url}`;
+     const whatsappMessage = `${inviteText}\n${url}`;
       const whatsappLink = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
       const whatsappBtn = document.getElementById("whatsappShare");
       whatsappBtn.href = whatsappLink;
