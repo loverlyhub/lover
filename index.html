@@ -225,7 +225,7 @@
 
     <input type="text" id="yourName" placeholder="Your name..." />
     <br />
-    <input type="text" id="crushName" placeholder="Crush's name..." />
+    <input type="text" id="crushName" placeholder="Hre name..." />
     <br />
     <button onclick="showLoveMatch()">Check Match</button>
   </div>
@@ -286,7 +286,7 @@
       const url = window.location.href;
       document.getElementById("siteLink").value = url;
 
-      const inviteText = "Come see how compatible your love is.";
+      const inviteText = "ඔබ සහ ඇය කොපමන ගැලපෙනවාද බලන්න ලින්කය වෙත යන්න.   Go to the link to see how compatible you and she are.";
      const whatsappMessage = `${inviteText}\n${url}`;
       const whatsappLink = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
       const whatsappBtn = document.getElementById("whatsappShare");
@@ -314,7 +314,7 @@
 
 function copyLink() {
   const link = document.getElementById("siteLink").value;
-  const message = "Come see how compatible your love is.\n" + link;
+  const message = "ඔබ සහ ඇය කොපමන ගැලපෙනවාද බලන්න ලින්කය වෙත යන්න.   Go to the link to see how compatible you and she are.\n" + link;
 
   // Copy to clipboard
   navigator.clipboard.writeText(message).then(() => {
